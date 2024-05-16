@@ -1,10 +1,12 @@
- import './App.css';
+import React from 'react';
+import './App.css';
 import Para from './para'; // Corrected import
 
 function App() {
   return (
     <>
-      <Para /> {/* Corrected component name */}
+      <button>Click Here</button>
+      <Para/>
     </>
   );
 }
