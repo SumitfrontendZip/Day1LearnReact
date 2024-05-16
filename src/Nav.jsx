@@ -1,5 +1,6 @@
 import './Nav.css'
 import Logo from './logo.png'
+import List from './list.png'
 function Nav(){
     return(
         <nav>
@@ -12,7 +13,7 @@ function Nav(){
             <span>Courses</span>
             <button>Get Started</button>
         </div>
-        <img src="list.png" alt=""/>
+        <img src={List} alt=""/>
     </nav>
     )
 }
