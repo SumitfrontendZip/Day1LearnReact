@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import Para from './para'; // Corrected import
+import Para from './para'; // Assuming the correct import path for Para component
 
 function App() {
+  const [showPara, setShowPara] = useState(false);
+
   return (
     <>
-      <button>Click Here</button>
-      <Para/>
+      <button onClick={() => setShowPara(true)}>Click Here</button>
+      {showPara && <Para />} {/* Render Para component only if showPara is true */}
     </>
   );
 }
